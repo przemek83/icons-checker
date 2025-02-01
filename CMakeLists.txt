@@ -21,13 +21,13 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets Core)
 qt_standard_project_setup()
 
 set(${PROJECT_NAME}_SOURCES
-    main.cpp
-    Widget.h
-    Widget.cpp
+    src/main.cpp
+    src/Widget.h
+    src/Widget.cpp
 )
 
 set(UI
-    Widget.ui
+    src/Widget.ui
 )
 source_group("UI Files" FILES ${UI})
 
