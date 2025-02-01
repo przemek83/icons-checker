@@ -1,5 +1,6 @@
 #include <QGridLayout>
 #include <QToolButton>
+#include <QStyle>
 
 #include "Widget.h"
 #include "ui_Widget.h"
