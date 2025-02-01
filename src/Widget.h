@@ -1,5 +1,6 @@
-#ifndef WIDGET_H
-#define WIDGET_H
+#pragma once
+
+#include <memory>
 
 #include <QWidget>
 
@@ -17,7 +18,5 @@ public:
     ~Widget() override;
 
 private:
-    Ui::Widget* ui;
+    std::unique_ptr<Ui::Widget> ui_;
 };
-
-#endif  // WIDGET_H

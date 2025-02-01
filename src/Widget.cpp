@@ -1,30 +1,27 @@
 #include <QGridLayout>
-#include <QToolButton>
 #include <QStyle>
+#include <QToolButton>
 
 #include "Widget.h"
 #include "ui_Widget.h"
 
-Widget::Widget(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Widget)
+Widget::Widget(QWidget* parent)
+    : QWidget(parent), ui_{std::make_unique<Ui::Widget>()}
 {
-    ui->setupUi(this);
+    ui_->setupUi(this);
 
     QGridLayout* layout = new QGridLayout(this);
 
     setLayout(layout);
 
-    for(int i = 0; i < 70; ++i )
+    for (int i = 0; i < 70; ++i)
     {
         QToolButton* button = new QToolButton(this);
-        button->setIcon(QApplication::style()->standardIcon((QStyle::StandardPixmap)i));
+        button->setIcon(
+            QApplication::style()->standardIcon((QStyle::StandardPixmap)i));
         button->setToolTip(QString::number(i));
-        layout->addWidget(button, i/6, i%6);
+        layout->addWidget(button, i / 6, i % 6);
     }
 }
 
-Widget::~Widget()
-{
-    delete ui;
-}
+Widget::~Widget() = default;
