@@ -14,7 +14,7 @@ Widget::Widget(QWidget* parent)
 
     setLayout(layout);
 
-    for (int i = 0; i < 70; ++i)
+    for (int i = 0; i < 78; ++i)
     {
         QToolButton* button = new QToolButton(this);
         button->setIcon(
