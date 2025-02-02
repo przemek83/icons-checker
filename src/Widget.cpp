@@ -12,6 +12,7 @@ Widget::Widget()
     setLayout(layout);
 
     const int iconsCount{78};
+    const int iconsInRow{static_cast<int>(std::sqrt(iconsCount))};
     for (int i{0}; i < iconsCount; ++i)
     {
         QToolButton* button{new QToolButton(this)};
@@ -19,7 +20,6 @@ Widget::Widget()
         button->setIcon(QApplication::style()->standardIcon(pixmap));
         button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         button->setText(QString::number(i));
-        const int iconsInRow{static_cast<int>(std::sqrt(iconsCount))};
         layout->addWidget(button, i / iconsInRow, i % iconsInRow);
     }
 }
