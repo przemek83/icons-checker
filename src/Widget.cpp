@@ -1,15 +1,12 @@
+#include <QApplication>
 #include <QGridLayout>
 #include <QStyle>
 #include <QToolButton>
 
 #include "Widget.h"
-#include "ui_Widget.h"
 
-Widget::Widget(QWidget* parent)
-    : QWidget(parent), ui_{std::make_unique<Ui::Widget>()}
+Widget::Widget()
 {
-    ui_->setupUi(this);
-
     QGridLayout* layout{new QGridLayout(this)};
 
     setLayout(layout);
@@ -24,5 +21,3 @@ Widget::Widget(QWidget* parent)
         layout->addWidget(button, i / 8, i % 8);
     }
 }
-
-Widget::~Widget() = default;
