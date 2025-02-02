@@ -19,7 +19,8 @@ Widget::Widget(QWidget* parent)
         QToolButton* button = new QToolButton(this);
         button->setIcon(
             QApplication::style()->standardIcon((QStyle::StandardPixmap)i));
-        button->setToolTip(QString::number(i));
+        button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+        button->setText(QString::number(i));
         layout->addWidget(button, i / 6, i % 6);
     }
 }
