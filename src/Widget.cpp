@@ -10,18 +10,18 @@ Widget::Widget(QWidget* parent)
 {
     ui_->setupUi(this);
 
-    QGridLayout* layout = new QGridLayout(this);
+    QGridLayout* layout{new QGridLayout(this)};
 
     setLayout(layout);
 
-    for (int i = 0; i < 78; ++i)
+    for (int i{0}; i < 78; ++i)
     {
-        QToolButton* button = new QToolButton(this);
-        button->setIcon(
-            QApplication::style()->standardIcon((QStyle::StandardPixmap)i));
+        QToolButton* button{new QToolButton(this)};
+        QStyle::StandardPixmap pixmap{static_cast<QStyle::StandardPixmap>(i)};
+        button->setIcon(QApplication::style()->standardIcon(pixmap));
         button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         button->setText(QString::number(i));
-        layout->addWidget(button, i / 6, i % 6);
+        layout->addWidget(button, i / 8, i % 8);
     }
 }
 
