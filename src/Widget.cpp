@@ -11,13 +11,15 @@ Widget::Widget()
 
     setLayout(layout);
 
-    for (int i{0}; i < 78; ++i)
+    const int iconsCount{78};
+    for (int i{0}; i < iconsCount; ++i)
     {
         QToolButton* button{new QToolButton(this)};
         QStyle::StandardPixmap pixmap{static_cast<QStyle::StandardPixmap>(i)};
         button->setIcon(QApplication::style()->standardIcon(pixmap));
         button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         button->setText(QString::number(i));
-        layout->addWidget(button, i / 8, i % 8);
+        const int iconsInRow{static_cast<int>(std::sqrt(iconsCount))};
+        layout->addWidget(button, i / iconsInRow, i % iconsInRow);
     }
 }
