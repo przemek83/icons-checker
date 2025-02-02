@@ -26,10 +26,5 @@ set(${PROJECT_NAME}_SOURCES
     src/Widget.cpp
 )
 
-set(UI
-    src/Widget.ui
-)
-source_group("UI Files" FILES ${UI})
-
-add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCES} ${UI})
+add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCES})
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Core Qt6::Widgets)
