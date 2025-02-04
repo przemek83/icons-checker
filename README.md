@@ -5,7 +5,7 @@
 ![](screenshot_ubuntu.png?raw=true "")
 
 ## Description
-Small Qt application showing available built into Qt icons for current OS. 
+Small Qt application showing available icons for current OS. Icons are built into Qt, enumerated using `QStyle::StandardPixmap` and accessible through `QStyle::standardIcon` method.
 
 ## Getting Started
 This section describes briefly how to setup the environment and build the project.
