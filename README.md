@@ -1,6 +1,15 @@
 [![Build & test](https://github.com/przemek83/icons-checker/actions/workflows/buld-and-test.yml/badge.svg)](https://github.com/przemek83/icons-checker/actions/workflows/buld-and-test.yml)
 [![CodeQL](https://github.com/przemek83/icons-checker/actions/workflows/codeql.yml/badge.svg)](https://github.com/przemek83/icons-checker/actions/workflows/codeql.yml)
 
+## Table of contents
+- [Example view](#example-view)
+- [Description](#description)
+- [Getting Started](#getting-started)
+   * [Prerequisites](#prerequisites)
+   * [Building](#building)
+- [Built with](#built-with)
+- [Licensing](#licensing)
+
 ## Example view
 ![](screenshot_ubuntu.png?raw=true "")
 
