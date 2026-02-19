@@ -14,13 +14,13 @@
 ![](screenshot_ubuntu.png?raw=true "")
 
 ## Description
-Small Qt application showing available icons for current OS. Icons are built into Qt, enumerated using `QStyle::StandardPixmap` and accessible through the `QStyle::standardIcon` method.
+Small Qt application showing available icons for the current OS. Icons are built into Qt, enumerated using `QStyle::StandardPixmap` and accessible through the `QStyle::standardIcon` method.
 
 ## Getting Started
 This section describes briefly how to setup the environment and build the project.
 
 ### Prerequisites
-Qt in version 6.5 or greater, C++ compiler with C++17 support as a minimum and CMake 3.16+. 
+Qt in version 6.5 or greater, C++ compiler with C++17 support as a minimum, and CMake 3.16+. 
 
 ### Building
 Clone and use CMake directly or via any IDE supporting it. CMake should:
