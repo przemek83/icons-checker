@@ -33,10 +33,10 @@ As a result of compilation, binary for simulations and binary for testing should
 | |  Windows | Windows | Ubuntu |
 | --- | --- | --- | --- | 
 | OS version | 10 22H2 | 10 22H2 | 24.04 |
-| compiler | GCC 13.1.0 | MSVC 19.29 | GCC 13.2.0 |
-| CMake | 3.30.2 | 3.30.2 |3.28.3 |
+| compiler | GCC 13.1.0 | MSVC 19.29 | GCC 13.3.0 |
+| CMake | 3.30.2 | 3.30.2 | 4.3.4 |
 | Git | 2.46.0 | 2.46.0 | 2.43.0 |
-| Qt | 6.5.2 | 6.5.2 | 6.5.2 |
+| Qt | 6.5.2 | 6.5.2 | 6.8.3 |
 
 ## Licensing
 Icons checker is published under an MIT license.
